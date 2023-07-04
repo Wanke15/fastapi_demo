@@ -16,7 +16,7 @@ def create_app():
 
     # config = get_config()
     # services = config.get('services')
-    services = ["items", "users", "home_page"]
+    services = ["home_page", "search_page"]
     for service in services:
         try:
             service_module_name = "routers.{}".format(service)
